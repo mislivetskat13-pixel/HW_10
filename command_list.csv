@@ -1,0 +1,29 @@
+
+  614  cd Desktop
+  615  cd CompHW_10
+  616  history -c && rm ~/.bash_history
+  617  git config --global user.name "mislivetskat13-pixel"
+  618  git config --global user.email mislivets.kat13@gmail.com
+  619  git clone https://github.com/mislivetskat13-pixel/HW_10.git
+  620  cd HW_10
+  621  touch text_ignore.txt
+  622  nano .gitignore
+  623  git status
+  624  git add text_ignore.txt
+  625  git add .gitignore
+  626  git commit -m "New file created"
+  627  touch main_test.txt
+  628  git add main_test.txt
+  629  git commit -m "New empty file created"
+  630  git checkout -b develop
+  631  git checkout develop
+  632  touch develop_test.txt
+  633  git add develop_test.txt
+  634  git commit -m "New file created"
+  635  nano develop_test.txt
+  636  git status
+  637  git add develop_test.txt
+  638  git commit -m  "New small changes"
+  639  git checkout main
+  640  git merge develop
+  641  git log
